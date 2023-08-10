@@ -1,12 +1,6 @@
 #include "num.h"
 
 
-void Num::setNum(){
-    std::cout << "Insert number to change: ";
-    std::cin >> num;
-    std::cout << "\n";
-}
-
 void Num::setName(){
     
     std::vector<std::string> bases {"Base Ten", "Base Eight", "Base Sixteen"};
@@ -41,3 +35,7 @@ void Num::setName(std::vector<std::string> names){
     changeBase = names.at(1);
    }
 
+bool Num::setNum(){
+    std::cout << "Enter number to be transformed: ";
+    std::cin >> num;
+}

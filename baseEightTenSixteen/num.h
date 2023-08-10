@@ -10,11 +10,11 @@ class Num {
     
         void setName();
         void setName(std::vector<std::string> names);
-        void setNum();
+        bool setNum();
 
     private:
         
         std::string num, changeBase, originalBase;
-       
-
+        int test;
+        
 };
