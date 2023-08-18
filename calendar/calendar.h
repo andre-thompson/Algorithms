@@ -4,8 +4,8 @@ class Calendar{
     public:
         //member calls
         void addNode();
-        void insertNode(int);
         void print();
+        Node* returnNode(int);
     private:
         //head starts as null, allows head to be set during addNode
         Node* head = NULL;

@@ -7,5 +7,5 @@ int main(){
    calendar.addNode();
    calendar.addNode();
    calendar.addNode();
-   
+   calendar.returnNode(0);
 }

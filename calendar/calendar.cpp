@@ -29,8 +29,22 @@ void Calendar::addNode(){
 
 }
 
-
-
+Node* Calendar::returnNode(int pos){
+    Node* temp = head;
+    
+    int i;
+    if(temp == NULL){
+        std::cout << "Calendar is empty\n";
+        return NULL;
+    }
+    //iterate until node at pos is found, return node
+   for(i = 0; i < pos; i++){
+    temp = temp->getNext();
+   }
+  
+ 
+   return temp;
+}
 
 
 void Calendar::print(){
@@ -38,7 +52,7 @@ void Calendar::print(){
     Node* temp = head;
 
     if(temp == NULL){
-        std::cout << "List is empty\n";
+        std::cout << "Calendar is empty\n";
         return;
     }
 
