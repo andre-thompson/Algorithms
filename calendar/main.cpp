@@ -1,12 +1,23 @@
-#include "event.h"
 
+#include "node.h"
 
 int main(){
-    newEvent date;
-
+    Event date;
+    Node* one;
+    Node* two;
+    Node* head;
+    
     date.setName();
     date.setDate();
-    date.getName();
-    date.getDate();
     
+    
+    one = new Node();
+    two = new Node();
+
+    one->setEvent(date);
+    one->setNext(two);
+    two->setEvent(date);
+    two->setNext(NULL);
+    one->getEvent();
+    two->getEvent();
 }

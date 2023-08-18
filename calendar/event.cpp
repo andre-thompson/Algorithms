@@ -1,12 +1,13 @@
+
 #include "event.h"
 
-void newEvent::setName(){
+void Event::setName(){
     std::cout << "What is the name of this event? ";
     std::cin >> eventName;
     std::cout << "\n";
 }
 
-void newEvent::setDate(){
+void Event::setDate(){
     std::string dateToParse;
     
     std::cout << "When is the event? (day/month/year)";
@@ -24,11 +25,11 @@ void newEvent::setDate(){
 
 }
 
-void newEvent::getName(){
+void Event::getName(){
     std::cout << "Name: " << eventName << "\n";
 }
 
-void newEvent::getDate(){
+void Event::getDate(){
     std::cout << "Date: Day/Month/Year\n";
     std::cout << "      " << eventDate.at(0) << "/" << eventDate.at(1) << "/" << eventDate.at(2) << "\n";
     
