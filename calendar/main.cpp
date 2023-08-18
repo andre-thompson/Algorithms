@@ -3,7 +3,9 @@
 
 int main(){
    Calendar calendar;
+   
    calendar.addNode();
    calendar.addNode();
-   calendar.print();
+   calendar.addNode();
+   
 }
