@@ -1,10 +1,11 @@
 #include "node.h"
 
-class LinkedList {
+class linkedList {
     public:
-        LinkedList(){head = NULL;}
+        linkedList(){head = nullptr;}
         void print();
+        void appendNode(Node* newNode);
     private:
-        Node* head;
-    
+    Node* head = new Node;
+
 };

@@ -1,15 +1,15 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <vector>
 #include <string>
 
 class Node {
     public:
-        void setData();
-        int getData();
-       Node* getNext(){return next;}
-       void setNext(Node* nextNode);
+        void setData(int newData);
+        void setNext(Node* newNode);
+        int getData(){return data;}
+        Node* getNext(){return next;}
     private:
-        Node* next = NULL;
         int data;
+        Node* next = nullptr;
 };
