@@ -1,14 +1,13 @@
-#include "node.h"
+#include "event.h"
 
-class Calendar{
+ class Calendar{
     public:
-        //member calls
-        void addNode();
-        void print();
-        Node* returnNode(int);
-    private:
-        //head starts as null, allows head to be set during addNode
-        Node* head = NULL;
+        Calendar(){}
+        ~Calendar(){}
+        void addEvent();
+        void sortEvents();
         
-
-};
+    private:
+        std::vector<Event> data;
+        std::vector<Event> sortedData;
+ };
