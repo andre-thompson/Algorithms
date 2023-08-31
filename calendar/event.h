@@ -10,7 +10,10 @@ class Event {
         Event(){}
        ~Event(){}
        void setData();
+       std::string getName();
+       std::string getDate();
        void parseDate(); 
+       
     private:
         std::string name, date;
         std::vector<std::string> parsedDate;

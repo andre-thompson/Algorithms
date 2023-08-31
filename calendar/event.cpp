@@ -17,3 +17,13 @@ void Event::parseDate(){
     }
     parsedDate.push_back(date);
 }
+
+std::string Event::getName(){
+    return name;
+}
+
+std::string Event::getDate(){
+    return date;
+}
+
+

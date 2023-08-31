@@ -4,4 +4,5 @@
 int main (){
   Calendar newCalendar;
   newCalendar.addEvent();
+  newCalendar.storeCalendar();
 }
