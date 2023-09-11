@@ -1,19 +1,17 @@
 #include <iostream>
-#include <iomanip>
-#include <vector>
-#include <string>
 
+template<class ItemType>
 class Event {
     public:
-        //member calls
-        void setName();
-        void setDate();
-        void getName();
-        void getDate();
     
-        private:
-        //name and date of calendar event
-        std::string eventName;
-        std::vector<std::string> eventDate; //[day, month, year]
+    
+    private:
+    
+
 
 };
+
+
+
+
+#include "event.cpp"
