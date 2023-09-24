@@ -3,6 +3,7 @@
 #include <string>
 
 //code from ZyBook 3.3 Selection Sort
+//O(n^2) run time
 void SelectionSort(int* numbers, int numbersSize) {
    //iterate through list
    for (int i = 0; i < numbersSize - 1; i++) {
