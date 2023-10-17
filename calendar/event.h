@@ -9,7 +9,8 @@ class Event {
     public:
         Event(){}
        ~Event(){}
-       void setData();
+       void setName(std::string newName);
+       void setDate(std::string newDate);
        std::string getName();
        std::string getDate();
        void parseDate(); 

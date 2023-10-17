@@ -4,7 +4,7 @@
     public:
         Calendar(){}
         ~Calendar(){}
-        void addEvent();
+        void addEvent(std::string newName, std::string newDate);
         void sortEvents();
         void storeCalendar();
     private:

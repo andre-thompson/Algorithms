@@ -1,11 +1,11 @@
 #include "event.h"
 
-void Event::setData(){
-    std::cout << "Enter event name: ";
-    std::cin >> name;
-    std::cout << "Enter event date (day/month/year): ";
-    std::cin >> date;
+void Event::setDate(std::string newDate){
+    date = newDate;
+}
 
+void Event::setName(std::string newName){
+    name = newName;
 }
 
 void Event::parseDate(){

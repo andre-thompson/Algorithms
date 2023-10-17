@@ -1,9 +1,10 @@
 #include "calendar.h"
 
 
-void Calendar::addEvent(){
+void Calendar::addEvent(std::string newName, std::string newDate){
     Event newEvent;
-    newEvent.setData();
+    newEvent.setDate(newDate);
+    newEvent.setName(newName);
     data.push_back(newEvent);
 
 }
