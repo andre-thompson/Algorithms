@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 #include "calendar.h"
 
 void add_eventScreen(Calendar newCalendar){
@@ -25,6 +27,11 @@ int main (){
 
 
   newCalendar.storeCalendar();
+<<<<<<< HEAD
   
 
 }
+=======
+}
+>>>>>>> 3ecb0717bf7c4ca29a435b1416f5404a3c76ce4f
+>>>>>>> 67fedbfcfd7e019e0abd91f6e7e5940e1f4578eb

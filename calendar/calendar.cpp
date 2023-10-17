@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 #include "calendar.h"
 
 
@@ -22,3 +24,4 @@ void Calendar::storeCalendar(){
 
 
 
+>>>>>>> 3ecb0717bf7c4ca29a435b1416f5404a3c76ce4f

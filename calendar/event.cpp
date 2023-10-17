@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 #include "event.h"
 
 void Event::setDate(std::string newDate){
@@ -27,3 +29,4 @@ std::string Event::getDate(){
 }
 
 
+>>>>>>> 3ecb0717bf7c4ca29a435b1416f5404a3c76ce4f
