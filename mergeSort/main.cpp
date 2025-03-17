@@ -3,12 +3,12 @@
 #include <vector>
 using namespace std;
 
-void Merge(std::vector<std::string> list, int leftFirst, int leftLast, int rightLast, int& numC, int& numS) {
+void Merge(std::vector<std::string> list, int leftFirst, int leftLast, int rightHead, int& numC, int& numS) {
    int mergedSize = rightLast - leftFirst + 1;       // Size of merged partition
    std::vector<std::string> mergedList;
    int mergePos = 0;                         // Position to insert merged number
    int leftPos = leftFirst;                  // Initialize left partition position
-   int rightPos = leftLast + 1;              // Initialize right partition position
+   int rightPos = rightHead;              // Initialize right partition position
    
    // Add smallest element from left or right partition to merged numbers
    numC++;
@@ -16,12 +16,12 @@ void Merge(std::vector<std::string> list, int leftFirst, int leftLast, int right
      
       numC++; 
       if (list[leftPos] <= list[rightPos]) {
-         mergedList.push_back(list[rightPos]);
+         mergedList[mergePos] = list[leftPos];
          numS++;
          leftPos++;
       }
       else {
-         mergedList.push_back(list[rightPos]);
+         mergedList[mergePos] = list[rightPos];
          numS++;
          rightPos++;
       }
@@ -34,7 +34,7 @@ void Merge(std::vector<std::string> list, int leftFirst, int leftLast, int right
    while (leftPos <= leftLast) {
     
       numC++;
-      mergedList.push_back(list.at(leftPos));
+      mergedList[mergePos] = list[leftPos];
       numS++;
       leftPos++;
       mergePos++;
@@ -44,7 +44,7 @@ void Merge(std::vector<std::string> list, int leftFirst, int leftLast, int right
    while (rightPos <= rightLast) {
    
       numC++;
-      mergedList.push_back(list.at(rightPos));
+      mergedList[mergePos] list[rightPos];
       numS;
       rightPos++;
       mergePos++;
@@ -54,7 +54,7 @@ void Merge(std::vector<std::string> list, int leftFirst, int leftLast, int right
    for (mergePos = 0; mergePos < mergedSize; mergePos++) {
   
       numC;
-      list.at(leftFirst + mergePos) = mergedList.at(mergePos);
+      list[leftFirst + mergePos] = mergedList[mergePos];
       numS++;
    }
    
@@ -84,7 +84,7 @@ int main(){
         data.push_back(cur);
     }
 
-    MergeSort(data, 0, data.size() / 2, numC, numS);
+    MergeSort(data, 0, data.length -1, numC, numS);
     numC++;
    
    
